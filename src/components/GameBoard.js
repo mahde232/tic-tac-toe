@@ -72,8 +72,8 @@ class GameBoard extends React.Component {
         if(this.state.winner) {
             return (
                 <div id='endScreen'>
-                    <div>{this.state.winner==='DRAW' ? 'DRAW! No winner' : (`${this.state.winner} won!`)}</div>
-                    <button onClick={()=>{window.location.reload()}}>Play Again</button>
+                    <div className='title'>{this.state.winner==='DRAW' ? 'DRAW! No winner' : (`${this.state.winner} won!`)}</div>
+                    <button className='stateSnapshot' onClick={()=>{window.location.reload()}}>Play Again</button>
                 </div>
             )}
         return (
@@ -90,11 +90,11 @@ class GameBoard extends React.Component {
                     <GameTile id='gameTile9' onClickCallback={this.handleGameTileClick} currentPlayer={this.state.currentPlayer} myContent={this.state.gameTile9}/>
                 </div>
                 <div id='GameUI'>
-                    <div>
+                    <div className='currentPlayer title'>
                         Current Player: Player-{this.state.currentPlayer}
                     </div>
                     <div id='timeTravel'>
-                        Time Travel:
+                        <span className='title'>Time Travel:</span>
                         {this.state.historyOfStates.map((_,idx) => {
                             if(idx===0) //skip first state
                                 return ''

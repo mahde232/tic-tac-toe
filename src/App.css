@@ -1,8 +1,14 @@
+:root {
+  --gameBG:linear-gradient(to bottom right,black,darkred,red,darkred,black) ;
+}
 .App {
   width: 100%;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background: var(--gameBG);
+}
+body {
+  background: var(--gameBG);
 }
