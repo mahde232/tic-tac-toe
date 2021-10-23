@@ -17,8 +17,11 @@ You will also see any lint errors in the console.
 ## The assignment
 
 >We are going to build a tic-tac-toe game with React
+>
 I’ve broken down the assignment in two sections.
+
 Section 1 deals with the basics of the game.
+
 Section 2 deals with time travel.
 
 ## Thought proccess
