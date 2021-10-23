@@ -8,11 +8,8 @@
     display: flex;
     flex-direction: column;
 }
-*::-webkit-scrollbar {
-    display: none;
-}
+
 #GameBoard {
-    background-color: var(--gameBG);
     height: 90vmin;
     width: 90vmin;
     display: grid;
@@ -22,11 +19,11 @@
 #GameUI {
     display: flex;
     justify-content: space-between;
-    background-color: var(--gameBG);
 }
 #timeTravel {
     display: flex;
     flex-direction: column;
+    height: fit-content;
 }
 .GameTile {
     border: 3px solid white;
