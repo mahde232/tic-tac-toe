@@ -91,7 +91,7 @@ class GameBoard extends React.Component {
                 </div>
                 <div id='GameUI'>
                     <div className='currentPlayer title'>
-                        Current Player: Player-{this.state.currentPlayer}
+                        Current Player:<br/> Player-{this.state.currentPlayer}
                     </div>
                     <div id='timeTravel'>
                         <span className='title'>Time Travel:</span>
