@@ -26,7 +26,7 @@ It all began by splitting the game into big components, mainly:
 ### Gameboard
 
 Gameboard contains 9 GameTiles.
-Under it there are 2 UI elements which show `which player is now playing` and possible time travel `StateSnapshots`.
+Under it there are 2 UI elements which show 'which player is now playing' and possible time travel `StateSnapshots`.
 
 ### GameTiles
 
