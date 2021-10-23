@@ -98,7 +98,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--gameBG);
+    /* background-color: var(--gameBG); */
     color: white;
 }
 .title {

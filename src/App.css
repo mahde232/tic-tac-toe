@@ -1,5 +1,12 @@
 :root {
-  --gameBG:no-repeat center center/cover linear-gradient(to bottom right,black,darkred,red,darkred,black) ;
+  --gameBG: linear-gradient(
+    to bottom right,
+    black,
+    darkred,
+    red,
+    darkred,
+    black
+  );
 }
 .App {
   width: 100%;
@@ -7,8 +14,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--gameBG);
+  /* background: var(--gameBG) no-repeat center center/cover; */
 }
 body {
-  background: var(--gameBG);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--gameBG) no-repeat center center/cover;
 }
