@@ -25,14 +25,14 @@ Section 2 deals with time travel. <br />
 
 #### Start small and build up the complexity.
 >1. Get a board to be displayed on the screen.<br />
-2. How are you going to represent the board in code? Matrix?<br />
-3. First, turn each square into a X.<br />
-4. Represent that “X” into your board.<br />
- - Do not override you state. Create a new state and get a reference to the state. Modify that new state. So section 2 will be possible.<br />
-5. Then, take turns to change the square to a O.<br />
-6. Represent that “O” to your board.<br />
-7. You cannot click on a square if it is occupied<br />
-8. Determine if somebody won.<br />
+>2. How are you going to represent the board in code? Matrix?<br />
+>3. First, turn each square into a X.<br />
+>4. Represent that “X” into your board.<br />
+> - Do not override you state. Create a new state and get a reference to the state. Modify that new state. So section 2 will be possible.<br />
+>5. Then, take turns to change the square to a O.<br />
+>6. Represent that “O” to your board.<br />
+>7. You cannot click on a square if it is occupied<br />
+>8. Determine if somebody won.<br />
 
 ### Section 2
 
