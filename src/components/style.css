@@ -4,13 +4,15 @@
     margin: 0;
 }
 #GameScreen {
+    margin: 4vh 0;
     display: flex;
     flex-direction: column;
 }
+*::-webkit-scrollbar {
+    display: none;
+}
 #GameBoard {
     background-color: black;
-    /* height: 100vh;
-    width: 100vw; */
     height: 90vmin;
     width: 90vmin;
     display: grid;

@@ -56,7 +56,6 @@ class GameBoard extends React.Component {
         }
     }
     handleTimeTravel = (whichState) => {
-        console.log('the state i time traveled to=',this.state.historyOfStates[whichState]);
         this.setState(this.state.historyOfStates[whichState])
     }
     componentDidUpdate = (_,prevState) => {
