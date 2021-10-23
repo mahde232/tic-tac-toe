@@ -1,105 +1,121 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --gameBG: linear-gradient(
+    to bottom right,
+    black,
+    darkred,
+    red,
+    darkred,
+    black
+  );
+}
+body {
+  background: var(--gameBG) no-repeat center center/cover;
+  min-height: 100vh;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 #GameScreen {
-    margin: 4vh 0;
-    display: flex;
-    flex-direction: column;
+  padding-top: 4vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
-
 #GameBoard {
-    height: 90vmin;
-    width: 90vmin;
-    display: grid;
-    grid-template-columns: repeat(3,30vmin);
-    grid-template-rows: repeat(3,30vmin);
+  display: grid;
+  grid-template-columns: repeat(3, 30vmin);
+  grid-template-rows: repeat(3, 30vmin);
 }
 #GameUI {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-around;
+  width: 100vmin;
 }
 #timeTravel {
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
 }
 .GameTile {
-    border: 3px solid white;
-    border-radius: 20px;
-    width: 30vmin;
-    height: 30vmin;
-    color: #EEE;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20vmin;
-    text-shadow: black 5px 5px 5px;
+  border: 3px solid white;
+  border-radius: 20px;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20vmin;
+  text-shadow: black 5px 5px 5px;
 }
 #gameTile1 {
-    border-top: none;
-    border-left: none;
+  border-top: none;
+  border-left: none;
 }
 #gameTile2 {
-    border-top: none;
+  border-top: none;
 }
 #gameTile3 {
-    border-top: none;
-    border-right: none;
+  border-top: none;
+  border-right: none;
 }
 #gameTile4 {
-    border-left: none;
+  border-left: none;
 }
 #gameTile6 {
-    border-right: none;
+  border-right: none;
 }
 #gameTile7 {
-    border-left: none;
-    border-bottom: none;
+  border-left: none;
+  border-bottom: none;
 }
 #gameTile8 {
-    border-bottom: none;
+  border-bottom: none;
 }
 #gameTile9 {
-    border-bottom: none;
-    border-right: none;
+  border-bottom: none;
+  border-right: none;
 }
 .GameTile:hover {
-    background-color: rgba(255, 255, 255,0.15);
-    cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.15);
+  cursor: pointer;
 }
 .stateSnapshot {
-    background: var(--gameBG);
-    color: white;
-    text-shadow: black 2px 2px;
-    text-align: center;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    padding: 4px 20px;
-    font-size: 1rem;
-    font-weight: 700;
-    box-shadow: whitesmoke 0 0 4px 1px;
+  background: var(--gameBG);
+  color: white;
+  text-shadow: black 2px 2px;
+  text-align: center;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 4px 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: whitesmoke 0 0 4px 1px;
 }
 .stateSnapshot:hover {
-    transform: scale(1.02);
-    cursor: pointer;
+  transform: scale(1.02);
+  cursor: pointer;
 }
-.stateSnapshot:active{
-    transform: scale(0.98);
+.stateSnapshot:active {
+  transform: scale(0.98);
 }
 #endScreen {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 .title {
-    font-weight: 600;
-    color: whitesmoke;
-    text-shadow: black 2px 2px;
-    font-size: 1.5rem;
+  font-weight: 600;
+  color: whitesmoke;
+  text-shadow: black 2px 2px;
+  font-size: 1.5rem;
 }

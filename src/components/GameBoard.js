@@ -69,6 +69,7 @@ class GameBoard extends React.Component {
         }
     }
     render() {
+        console.log(this.state);
         if(this.state.winner) {
             return (
                 <div id='endScreen'>
